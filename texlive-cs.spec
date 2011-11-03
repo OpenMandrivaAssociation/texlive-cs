@@ -1,5 +1,11 @@
+# revision 15878
+# category Package
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-cs
-Version:	20111101
+Version:	20111103
 Release:	1
 Summary:	TeXLive cs package
 Group:		Publishing
@@ -360,6 +366,7 @@ TeXLive cs package.
 %{_texmfdistdir}/fonts/type1/public/cs/csu10.pfb
 %{_texmfdistdir}/fonts/type1/public/cs/csvtt10.pfb
 %_texmf_updmap_d/cs
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -370,6 +377,8 @@ TeXLive cs package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips fonts %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
 mkdir -p %{buildroot}%{_texmf_updmap_d}
 cat > %{buildroot}%{_texmf_updmap_d}/cs <<EOF
 MixedMap csother.map
