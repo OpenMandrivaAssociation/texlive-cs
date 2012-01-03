@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-cs
 Version:	20111103
-Release:	1
+Release:	2
 Summary:	TeXLive cs package
 Group:		Publishing
 URL:		http://tug.org/texlive
