@@ -369,3 +369,17 @@ cat > %{buildroot}%{_texmf_updmap_d}/cs <<EOF
 MixedMap csother.map
 MixedMap cstext.map
 EOF
+
+
+%changelog
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111103-2
++ Revision: 750653
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111103-1
++ Revision: 718169
+- texlive-cs
+- texlive-cs
+- texlive-cs
+- texlive-cs
+
