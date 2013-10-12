@@ -1,16 +1,16 @@
-# revision 15878
+# revision 28598
 # category Package
-# catalog-ctan undef
-# catalog-date undef
-# catalog-license undef
+# catalog-ctan /macros/cstex/base/csfonts.tar.gz
+# catalog-date 2012-04-25 13:09:32 +0200
+# catalog-license gpl
 # catalog-version undef
 Name:		texlive-cs
-Version:	20111103
-Release:	2
-Summary:	TeXLive cs package
+Version:	20120425
+Release:	1
+Summary:	Czech/Slovak-tuned Computer Modern fonts
 Group:		Publishing
-URL:		http://tug.org/texlive
-License:	http://www.tug.org/texlive/LICENSE.TL
+URL:		http://www.ctan.org/tex-archive/macros/cstex/base/csfonts.tar.gz
+License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cs.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
@@ -19,7 +19,8 @@ Requires(post):	texlive-kpathsea
 Requires(post):	texlive-tetex
 
 %description
-TeXLive cs package.
+The fonts are provided as Metafont source; Type 1 format
+versions (csfonts-t1) are also available.
 
 %post
     %{_sbindir}/texlive.post
@@ -31,14 +32,12 @@ TeXLive cs package.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/dvips/cs/config.cs
-%{_texmfdistdir}/fonts/enc/dvips/cs/csin.enc
-%{_texmfdistdir}/fonts/enc/dvips/cs/csr.enc
-%{_texmfdistdir}/fonts/enc/dvips/cs/csr1.enc
-%{_texmfdistdir}/fonts/enc/dvips/cs/cstt.enc
-%{_texmfdistdir}/fonts/map/dvips/cs/csfont-e.map
-%{_texmfdistdir}/fonts/map/dvips/cs/csother.map
-%{_texmfdistdir}/fonts/map/dvips/cs/cstext.map
+%{_texmfdistdir}/fonts/enc/dvips/cs/xl2.enc
+%{_texmfdistdir}/fonts/enc/dvips/cs/xt2.enc
+%{_texmfdistdir}/fonts/map/dvips/cs/cs-a35-nodownload.map
+%{_texmfdistdir}/fonts/map/dvips/cs/cs-a35-urwdownload.map
+%{_texmfdistdir}/fonts/map/dvips/cs/cs-charter.map
+%{_texmfdistdir}/fonts/map/dvips/cs/csfonts.map
 %{_texmfdistdir}/fonts/source/public/cs/csaccent.mf
 %{_texmfdistdir}/fonts/source/public/cs/csacutl.mf
 %{_texmfdistdir}/fonts/source/public/cs/csacutu.mf
@@ -178,6 +177,64 @@ TeXLive cs package.
 %{_texmfdistdir}/fonts/source/public/cs/lcsss8.mf
 %{_texmfdistdir}/fonts/source/public/cs/lcsssb8.mf
 %{_texmfdistdir}/fonts/source/public/cs/lcsssi8.mf
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/README
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pagd8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pagdc8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pagdo8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pagk8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pagkc8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pagko8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pbkd8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pbkdc8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pbkdi8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pbkl8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pbklc8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pbkli8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pcrb8u.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pcrbc8u.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pcrbo8u.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pcrr8u.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pcrrc8u.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pcrro8u.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/phvb8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/phvbc8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/phvbn8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/phvbnc8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/phvbo8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/phvbon8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/phvr8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/phvrc8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/phvrn8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/phvrnc8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/phvro8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/phvron8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pncb8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pncbc8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pncbi8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pncr8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pncrc8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pncri8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pplb8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pplbc8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pplbi8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pplr8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pplrc8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pplri8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/ptmb8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/ptmbc8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/ptmbi8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/ptmr8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/ptmrc8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/ptmri8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-a35/pzcmi8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-charter/bchb8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-charter/bchbi8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-charter/bchr8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-charter/bchri8z.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-charter/rbchb.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-charter/rbchbi.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-charter/rbchr.tfm
+%{_texmfdistdir}/fonts/tfm/cs/cs-charter/rbchri.tfm
 %{_texmfdistdir}/fonts/tfm/public/cs/csb10.tfm
 %{_texmfdistdir}/fonts/tfm/public/cs/csb12.tfm
 %{_texmfdistdir}/fonts/tfm/public/cs/csb17.tfm
@@ -353,6 +410,27 @@ TeXLive cs package.
 %{_texmfdistdir}/fonts/type1/public/cs/cstt9.pfb
 %{_texmfdistdir}/fonts/type1/public/cs/csu10.pfb
 %{_texmfdistdir}/fonts/type1/public/cs/csvtt10.pfb
+%{_texmfdistdir}/fonts/vf/cs/cs-a35/README
+%{_texmfdistdir}/fonts/vf/cs/cs-a35/pagdc8z.vf
+%{_texmfdistdir}/fonts/vf/cs/cs-a35/pagkc8z.vf
+%{_texmfdistdir}/fonts/vf/cs/cs-a35/pbkdc8z.vf
+%{_texmfdistdir}/fonts/vf/cs/cs-a35/pbklc8z.vf
+%{_texmfdistdir}/fonts/vf/cs/cs-a35/pcrbc8u.vf
+%{_texmfdistdir}/fonts/vf/cs/cs-a35/pcrrc8u.vf
+%{_texmfdistdir}/fonts/vf/cs/cs-a35/phvbc8z.vf
+%{_texmfdistdir}/fonts/vf/cs/cs-a35/phvbnc8z.vf
+%{_texmfdistdir}/fonts/vf/cs/cs-a35/phvrc8z.vf
+%{_texmfdistdir}/fonts/vf/cs/cs-a35/phvrnc8z.vf
+%{_texmfdistdir}/fonts/vf/cs/cs-a35/pncbc8z.vf
+%{_texmfdistdir}/fonts/vf/cs/cs-a35/pncrc8z.vf
+%{_texmfdistdir}/fonts/vf/cs/cs-a35/pplbc8z.vf
+%{_texmfdistdir}/fonts/vf/cs/cs-a35/pplrc8z.vf
+%{_texmfdistdir}/fonts/vf/cs/cs-a35/ptmbc8z.vf
+%{_texmfdistdir}/fonts/vf/cs/cs-a35/ptmrc8z.vf
+%{_texmfdistdir}/fonts/vf/cs/cs-charter/bchb8z.vf
+%{_texmfdistdir}/fonts/vf/cs/cs-charter/bchbi8z.vf
+%{_texmfdistdir}/fonts/vf/cs/cs-charter/bchr8z.vf
+%{_texmfdistdir}/fonts/vf/cs/cs-charter/bchri8z.vf
 %_texmf_updmap_d/cs
 
 #-----------------------------------------------------------------------
@@ -363,23 +441,9 @@ TeXLive cs package.
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar dvips fonts %{buildroot}%{_texmfdistdir}
+cp -fpar fonts %{buildroot}%{_texmfdistdir}
 mkdir -p %{buildroot}%{_texmf_updmap_d}
 cat > %{buildroot}%{_texmf_updmap_d}/cs <<EOF
-MixedMap csother.map
-MixedMap cstext.map
+Map cs-charter.map
+Map csfonts.map
 EOF
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111103-2
-+ Revision: 750653
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111103-1
-+ Revision: 718169
-- texlive-cs
-- texlive-cs
-- texlive-cs
-- texlive-cs
-
