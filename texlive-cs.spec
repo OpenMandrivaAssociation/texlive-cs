@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-cs
 Version:	20120425
-Release:	4
+Release:	5
 Summary:	Czech/Slovak-tuned Computer Modern fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/cstex/base/csfonts.tar.gz
