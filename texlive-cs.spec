@@ -1,12 +1,12 @@
-# revision 28598
+# revision 33941
 # category Package
 # catalog-ctan /macros/cstex/base/csfonts.tar.gz
-# catalog-date 2012-04-25 13:09:32 +0200
+# catalog-date 2014-04-24 13:39:23 +0200
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-cs
-Version:	20120425
-Release:	6
+Version:	20140424
+Release:	1
 Summary:	Czech/Slovak-tuned Computer Modern fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/cstex/base/csfonts.tar.gz
@@ -33,6 +33,7 @@ versions (csfonts-t1) are also available.
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/fonts/enc/dvips/cs/xl2.enc
+%{_texmfdistdir}/fonts/enc/dvips/cs/xl2f.enc
 %{_texmfdistdir}/fonts/enc/dvips/cs/xt2.enc
 %{_texmfdistdir}/fonts/map/dvips/cs/cs-a35-nodownload.map
 %{_texmfdistdir}/fonts/map/dvips/cs/cs-a35-urwdownload.map
