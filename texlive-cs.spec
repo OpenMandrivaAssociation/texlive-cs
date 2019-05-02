@@ -5,8 +5,8 @@
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-cs
-Version:	20180303
-Release:	2
+Version:	20190228
+Release:	1
 Summary:	Czech/Slovak-tuned Computer Modern fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/cstex/base/csfonts.tar.gz
