@@ -1,17 +1,11 @@
-# revision 33941
-# category Package
-# catalog-ctan /macros/cstex/base/csfonts.tar.gz
-# catalog-date 2014-04-24 13:39:23 +0200
-# catalog-license gpl
-# catalog-version undef
 Name:		texlive-cs
-Version:	20190228
+Version:	41553
 Release:	1
 Summary:	Czech/Slovak-tuned Computer Modern fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/cstex/base/csfonts.tar.gz
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cs.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cs.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,12 +17,12 @@ The fonts are provided as Metafont source; Type 1 format
 versions (csfonts-t1) are also available.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -436,7 +430,7 @@ versions (csfonts-t1) are also available.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0
+%autosetup -p1 -c
 
 %build
 
