@@ -3,7 +3,7 @@ Version:	41553
 Release:	2
 Summary:	Czech/Slovak-tuned Computer Modern fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/cstex/base/csfonts.tar.gz
+URL:		https://www.ctan.org/tex-archive/macros/cstex/base/csfonts.tar.gz
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cs.r%{version}.tar.xz
 BuildArch:	noarch
