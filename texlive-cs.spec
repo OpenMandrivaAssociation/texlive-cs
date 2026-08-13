@@ -12,9 +12,18 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/cs.r%{tl_revisio
 BuildArch:	noarch
 BuildSystem:	texlive
 Requires:	texlive(cmexb)
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 The fonts are provided as Metafont source; Type 1 format versions
 (csfonts-t1) are also available.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from cs:
+Map cs-charter.map
+Map csfonts.map
+TL_DROPIN_EOF
